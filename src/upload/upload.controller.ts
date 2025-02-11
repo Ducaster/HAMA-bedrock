@@ -26,7 +26,7 @@ export class UploadController {
 
     return {
       fileName: file.originalname,
-      analysisResult,
+      analysisResult: JSON.parse(analysisResult),
     };
   }
 }
